@@ -12,8 +12,10 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: 'test'
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: docker build
-        run: docker build -t online-app:v1 .
+      - name: path and directory
+        run: pwd && ls -lrth 
+  # build:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: docker build
+  #       run: docker build -t online-app:v1 .
