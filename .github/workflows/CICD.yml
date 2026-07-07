@@ -14,8 +14,8 @@ jobs:
           ref: 'test'
       - name: path and directory
         run: pwd && ls -lrth 
-  # build:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: docker build
-  #       run: docker build -t online-app:v1 .
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: docker build
+        run: docker build -f Dockerfile -t online-app:latest .
