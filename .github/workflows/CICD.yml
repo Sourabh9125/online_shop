@@ -1,0 +1,12 @@
+name: CICD
+
+on: workflow_dispatch
+
+jobs:
+  code-clone:
+    runs-on: ubuntu-latest
+    steps:
+      - name: code clone
+        uses: actions/checkout@v4
+        with:
+          ref: 'test'
