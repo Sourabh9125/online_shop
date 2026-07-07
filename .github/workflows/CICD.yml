@@ -1,6 +1,8 @@
 name: CICD
 
-on: workflow_dispatch
+on:
+  push:
+    branches: [test]
 
 jobs:
   code-clone:
